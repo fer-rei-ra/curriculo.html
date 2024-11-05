@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00a86b;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+/* Card principal */
+.main-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.ribbon {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 30px;
+    height: 80px;
+    background-color: #ff4d4d;
+    transform: rotate(15deg);
+}
+
+/*introdução */
+.intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.intro-image {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #00a86b;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.intro-text {
+    flex-grow: 1;
+}
+.intro-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.intro-text h2 span {
+    color: #ffa500;
+    display: block;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+.section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+}
+
+/* Cores das seções */
+.contact h3 { color: #ff4d4d; border-color: #ff4d4d; }
+.education h3 { color: #4d79ff; border-color: #4d79ff; }
+.software h3 { color: #00a86b; border-color: #00a86b; }
+.strengths h3 { color: #ffa500; border-color: #ffa500; }
+
+
+/* Estilos para tags/badges */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tag {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.text{
+    a {
+        text-decoration: none;
+        color: #ff4d4d;
+    }
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .main-card {
+        padding: 20px;
+    }
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .intro-image {
+        width: 150px;
+        height: 150px;
+    }
+}
