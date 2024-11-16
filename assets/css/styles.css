@@ -16,7 +16,6 @@ h1, h2, h3 {
     margin-top: 0;
 }
 
-/* Card principal */
 .main-card {
     background-color: white;
     border-radius: 20px;
@@ -34,7 +33,6 @@ h1, h2, h3 {
     transform: rotate(15deg);
 }
 
-/*introdução */
 .intro {
     display: flex;
     align-items: flex-start;
@@ -79,14 +77,11 @@ h1, h2, h3 {
     border-bottom: 2px solid;
 }
 
-/* Cores das seções */
 .contact h3 { color: #ff4d4d; border-color: #ff4d4d; }
 .education h3 { color: #4d79ff; border-color: #4d79ff; }
 .software h3 { color: #00a86b; border-color: #00a86b; }
 .strengths h3 { color: #ffa500; border-color: #ffa500; }
 
-
-/* Estilos para tags/badges */
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +103,6 @@ h1, h2, h3 {
     display: inline-block;
 }
 
-/* Responsividade */
 @media (max-width: 600px) {
     .container {
         padding: 10px;
